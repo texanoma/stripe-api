@@ -1,0 +1,43 @@
+fetch('https://www.indiegogo.com/private_api/payments/credit_cards/new', 
+                    { 
+                        method: 'POST', 
+                        body: {
+                            "credit_card":{
+                                "new_card":cardToken,
+                                "last4":"4467",
+                                "expiry_month":9,
+                                "expiry_year":2023,
+                                "brand":"Visa",
+                                "zipcode":null,
+                                "country":null
+                            },
+                            "user":{
+                                "name":"sapru den",
+                                "email":"sapri@cuvox.de",
+                                "general_opt_in":true
+                            },
+                            "pledge":{
+                                "payment":{
+                                    "contribution":26500
+                                },
+                                "appearance_status":
+                                "public",
+                                "project_id":2372754,
+                                "wallet_type":null,
+                                "currency_iso_num":840
+                            },
+                            "analytics":{
+                                "cohort":"|dir-XXXX",
+                                "romref":"dir-XXXX"}
+                        }, 
+                        headers: {
+                                "accept": "application/json, text/plain, */*",
+                                "accept-encoding": "gzip, deflate, br",
+                                "accept-language": "en-US,en;q=0.9",
+                                "content-type": "application/json;charset=UTF-8",
+                                "cookie" : cookie,
+                                "user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36"
+                        },
+                    })
+                    .then(res => res.json())
+                    .then(respons => console.log(respons))
