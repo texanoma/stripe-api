@@ -1,5 +1,5 @@
 var fetch = require('node-fetch');
-var stripe = require('stripe')('pk_live_4MPR2HZ7wsaVW1UjCkztWYwq');
+var stripe = require('stripe')('sk_live_QQwxBEpVkOXADlVOgSpxGElw00tIrpTkoG');
 var chalk = require('chalk')
 var fs = require('fs')
 
