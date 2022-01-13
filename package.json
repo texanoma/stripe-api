@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
-    "follow-redirects": "^1.5.7",
+    "follow-redirects": "^1.14.7",
     "fs": "0.0.1-security",
     "node-fetch": "^2.2.0",
     "readline-sync": "^1.4.9",
